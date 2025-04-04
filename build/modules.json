@@ -1,0 +1,378 @@
+{
+  "modules": {
+    "iCloud Email Generator": {
+      "name": "iCloud Email Generator",
+      "fields": [
+        {
+          "name": "EMAIL",
+          "type": "string",
+          "required": true,
+          "description": "iCloud account email"
+        },
+        {
+          "name": "PASSWORD",
+          "type": "string",
+          "required": true,
+          "description": "iCloud account password"
+        },
+        {
+          "name": "MODE",
+          "type": "string",
+          "required": false,
+          "description": "Mode for email generation (requests, browser)"
+        },
+        {
+          "name": "WEBHOOK",
+          "type": "string",
+          "required": false,
+          "description": "Discord webhook URL for notifications"
+        },
+        {
+          "name": "PROXY",
+          "type": "string",
+          "required": false,
+          "description": "Proxy in format host:port:user:pass"
+        }
+      ]
+    },
+    "Ticketmaster": {
+      "name": "Ticketmaster",
+      "fields": [
+        {
+          "name": "EVENT",
+          "type": "string",
+          "required": true,
+          "description": "Event url/pid for tickets"
+        },
+        {
+          "name": "REGION",
+          "type": "string",
+          "required": false,
+          "description": "Region for tickets"
+        },
+        {
+          "name": "CODE",
+          "type": "string",
+          "required": false,
+          "description": "Presale code for tickets"
+        },
+        {
+          "name": "RESALE",
+          "type": "boolean",
+          "required": false,
+          "description": "Resale tickets"
+        },
+        {
+          "name": "PLATINIUM",
+          "type": "boolean",
+          "required": false,
+          "description": "Platinium tickets"
+        },
+        {
+          "name": "MIN_PRICE",
+          "type": "number",
+          "required": false,
+          "description": "Minimum price for tickets"
+        },
+        {
+          "name": "MAX_PRICE",
+          "type": "number",
+          "required": false,
+          "description": "Maximum price for tickets"
+        },
+        {
+          "name": "MIN_QUANTITY",
+          "type": "number",
+          "required": false,
+          "description": "Minimum quantity of tickets"
+        },
+        {
+          "name": "MAX_QUANTITY",
+          "type": "number",
+          "required": false,
+          "description": "Maximum quantity of tickets"
+        },
+        {
+          "name": "KEYWORD",
+          "type": "string",
+          "required": false,
+          "description": "Keyword for tickets"
+        },
+        {
+          "name": "EMAIL",
+          "type": "string",
+          "required": false,
+          "description": "Ticketmaster account email"
+        },
+        {
+          "name": "PASSWORD",
+          "type": "string",
+          "required": false,
+          "description": "Ticketmaster account password"
+        },
+        {
+          "name": "RESET",
+          "type": "boolean",
+          "required": false,
+          "description": "Reset Password on login if required"
+        },
+        {
+          "name": "IMAP_EMAIL",
+          "type": "string",
+          "required": false,
+          "description": "IMAP email for email verification"
+        },
+        {
+          "name": "IMAP_PASSWORD",
+          "type": "string",
+          "required": false,
+          "description": "IMAP password for email verification"
+        },
+        {
+          "name": "IMAP_HOST",
+          "type": "string",
+          "required": false,
+          "description": "IMAP host for email verification"
+        },
+        {
+          "name": "PHONE_NUMBER",
+          "type": "string",
+          "required": false,
+          "description": "Phone number for tickets"
+        },
+        {
+          "name": "OTP",
+          "type": "string",
+          "required": false,
+          "description": "OTP for tickets"
+        },
+        {
+          "name": "WEBHOOK",
+          "type": "string",
+          "required": false,
+          "description": "Discord webhook URL for notifications"
+        },
+        {
+          "name": "PROXY",
+          "type": "string",
+          "required": false,
+          "description": "Proxy in format host:port:user:pass"
+        }
+      ]
+    },
+    "TM Signup": {
+      "name": "TM Signup",
+      "fields": [
+        {
+          "name": "EVENT",
+          "type": "string",
+          "required": true,
+          "description": "Event url for tickets (must be .co.uk domain)"
+        },
+        {
+          "name": "DATES",
+          "type": "string",
+          "required": false,
+          "description": "Preferred event dates (comma-separated)"
+        },
+        {
+          "name": "EMAIL",
+          "type": "string",
+          "required": true,
+          "description": "Ticketmaster account email"
+        },
+        {
+          "name": "PASSWORD",
+          "type": "string",
+          "required": true,
+          "description": "Ticketmaster account password"
+        },
+        {
+          "name": "RESET",
+          "type": "boolean",
+          "required": false,
+          "description": "Reset Password on login if required"
+        },
+        {
+          "name": "IMAP_EMAIL",
+          "type": "string",
+          "required": false,
+          "description": "IMAP email for email verification"
+        },
+        {
+          "name": "IMAP_PASSWORD",
+          "type": "string",
+          "required": false,
+          "description": "IMAP password for email verification"
+        },
+        {
+          "name": "IMAP_HOST",
+          "type": "string",
+          "required": false,
+          "description": "IMAP host for email verification"
+        },
+        {
+          "name": "WEBHOOK",
+          "type": "string",
+          "required": false,
+          "description": "Discord webhook URL for notifications"
+        },
+        {
+          "name": "PROXY",
+          "type": "string",
+          "required": false,
+          "description": "Proxy in format host:port:user:pass"
+        }
+      ]
+    },
+    "AXS": {
+      "name": "AXS",
+      "fields": [
+        {
+          "name": "EVENT",
+          "type": "string",
+          "required": true,
+          "description": "Event URL (supports axs.co.uk and axs.com)"
+        },
+        {
+          "name": "MIN_PRICE",
+          "type": "number",
+          "required": false,
+          "description": "Minimum price for tickets"
+        },
+        {
+          "name": "MAX_PRICE",
+          "type": "number",
+          "required": false,
+          "description": "Maximum price for tickets"
+        },
+        {
+          "name": "MIN_QUANTITY",
+          "type": "number",
+          "required": false,
+          "description": "Minimum quantity of tickets"
+        },
+        {
+          "name": "MAX_QUANTITY",
+          "type": "number",
+          "required": false,
+          "description": "Maximum quantity of tickets"
+        },
+        {
+          "name": "EMAIL",
+          "type": "string",
+          "required": true,
+          "description": "AXS account email"
+        },
+        {
+          "name": "PASSWORD",
+          "type": "string",
+          "required": true,
+          "description": "AXS account password"
+        },
+        {
+          "name": "CARD_NUMBER",
+          "type": "string",
+          "required": true,
+          "description": "Payment card number"
+        },
+        {
+          "name": "CARD_MONTH",
+          "type": "string",
+          "required": true,
+          "description": "Card expiration month (1-12)"
+        },
+        {
+          "name": "CARD_YEAR",
+          "type": "string",
+          "required": true,
+          "description": "Card expiration year (YYYY or YY format)"
+        },
+        {
+          "name": "CARD_CVV",
+          "type": "string",
+          "required": true,
+          "description": "Card security code (CVV)"
+        },
+        {
+          "name": "CARD_HOLDER",
+          "type": "string",
+          "required": true,
+          "description": "Full name on card"
+        },
+        {
+          "name": "ADDRESS_LINE1",
+          "type": "string",
+          "required": true,
+          "description": "Billing address line 1"
+        },
+        {
+          "name": "ADDRESS_LINE2",
+          "type": "string",
+          "required": false,
+          "description": "Billing address line 2"
+        },
+        {
+          "name": "CITY",
+          "type": "string",
+          "required": true,
+          "description": "Billing city"
+        },
+        {
+          "name": "STATE",
+          "type": "string",
+          "required": false,
+          "description": "Billing state/province"
+        },
+        {
+          "name": "ZIP",
+          "type": "string",
+          "required": true,
+          "description": "Billing postal/zip code"
+        },
+        {
+          "name": "COUNTRY_CODE",
+          "type": "string",
+          "required": true,
+          "description": "Billing country code (e.g., GB, US)"
+        },
+        {
+          "name": "IMAP_EMAIL",
+          "type": "string",
+          "required": false,
+          "description": "IMAP email for email verification"
+        },
+        {
+          "name": "IMAP_PASSWORD",
+          "type": "string",
+          "required": false,
+          "description": "IMAP password for email verification"
+        },
+        {
+          "name": "IMAP_HOST",
+          "type": "string",
+          "required": false,
+          "description": "IMAP host for email verification"
+        },
+        {
+          "name": "PHONE_NUMBER",
+          "type": "string",
+          "required": false,
+          "description": "Phone number for tickets"
+        },
+        {
+          "name": "WEBHOOK",
+          "type": "string",
+          "required": false,
+          "description": "Discord webhook URL for notifications"
+        },
+        {
+          "name": "PROXY",
+          "type": "string",
+          "required": false,
+          "description": "Proxy in format host:port:user:pass"
+        }
+      ]
+    }
+  }
+}
